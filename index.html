@@ -4,8 +4,8 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
-  <!-- 引用cssReset.css做样式重置处理 -->
+  <meta data-n-head="true" data-hid="description" name="description" content="Create your NFT artwork with one click.">
+  <title>ZEUS</title>
   <link rel="stylesheet" href="./css/cssReset.css">
   <style>
     .main{
@@ -13,32 +13,31 @@
       height: 100vh; 
     }
     .center {
-      height: 100%;
       display: flex;
-      flex-direction: row;
-      justify-content: space-between;
+      flex-direction: column;
+      justify-content: center;
       align-items: center;
-    }
-    /* 公共区域 */
-    .title {
       text-align: center;
-      margin-top: 30px;
     }
-    /* 所有img都随着大小变化 */
-    img {
-      width: 100%;
+    .logo{
+      margin-top:5vw ;
     }
     @media (max-width:576px) {
       .center {
         width: 90%;
         height: 100%;
       }
-      .title {
+      .title>:first-child{
+        font-size: 26px;
+        font-weight: 400;
+      }
+      .title>:last-child{
         font-size: 26px;
         margin-bottom:16px ;
       }
-      img {
+      .image {
         width: 50%;
+        margin-bottom: 20VW;
       }
     }
     @media (min-width:576px) {
@@ -46,12 +45,17 @@
         width:508px;
         height: 100%;
       }
-      .title {
+      .title>:first-child{
+        font-size: 28px;
+        font-weight: 400;
+      }
+      .title>:last-child{
         font-size: 28px;
         margin-bottom: 20px;
       }
-      img {
+      .image {
         width: 50%;
+        margin-bottom:18VW ;
       }
     }
     @media (min-width:640px) {
@@ -59,7 +63,11 @@
         width: 510px;
         height: 100%;
       }
-      .title {
+      .title>:first-child{
+        font-size: 32px;
+        font-weight: 400;
+      }
+      .title>:last-child{
         font-size: 32px;
         margin-bottom: 24px;
       }
@@ -69,12 +77,17 @@
         width: 690px;
         height: 100%;
       }
-      .title {
+      .title>:first-child{
+        font-size: 35px;
+        font-weight: 400;
+      }
+      .title>:last-child{
         font-size: 35px;
         margin-bottom: 32px;
       }
-      img {
+      .image {
         width: 50%;
+        margin-bottom:13VW ;
       }
     }
     @media (min-width:992px) {
@@ -82,9 +95,17 @@
         width: 930px;
         height: 100%;
       }
-      .title {
+      .title>:first-child{
+        font-size: 37px;
+        font-weight: 400;
+      }
+      .title>:last-child{
         font-size:37px;
         margin-bottom: 40px;
+      }
+      .image {
+        width: 50%;
+        margin-bottom:8VW ;
       }
     }
     @media (min-width:1200px) {
@@ -92,12 +113,17 @@
         width:1110px;
         height: 100%;
       }
-      .title {
+      .title>:first-child{
+        font-size: 40px;
+        font-weight: 400;
+      }
+      .title>:last-child{
         font-size: 40px;
         margin-bottom: 48px;
       }
-      img {
+      .image {
         width: 50%;
+        margin-bottom:5VW ;
       }
     }
   </style>
@@ -105,11 +131,17 @@
 <body>
   <div class="main">
     <div class="center">
+      <img src="./img/z.jpg" class="image">    
       <div class="title">
-        <h3>Create your NFT artwork with one click.</h3>
+        <p>Create your NFT artwork with one click.</p>
         <h3>It's coming soon!</h3>
       </div>
-      <img src="./img/zeus.png">    
+      <div class="logo">
+        <img src="./img/discord.png" alt="">
+        <img src="./img/github-fill.png" alt="">
+        <img src="./img/telegram.png" alt="">
+        <img src="./img/twitter.png" alt="">
+      </div>
     </div>
   </div>
 </body>
