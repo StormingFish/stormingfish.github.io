@@ -1,45 +1,44 @@
 /* css hack */
 
-/* 去掉所有元素的内外边距 */
 * {
   margin: 0;
   padding: 0;
 }
 
-/* 去掉列表的标识符 */
+
 ul,ol{
   list-style: none;
 }
 
-/* 去掉a的下划线 */
+
 a {
   text-decoration: none;
 }
 
-/* 去掉input的轮廓线 */
+
 input {
   outline: none;
 }
 
-/* 去掉按钮的边框线 */
+
 button {
   border: 0;
 }
 
-/* 清除浮动类 */
+
 .clear::after {
   content: "";
   display: block;
   clear: both;
 }
 
-/* 低版本IE清除浮动 */
+
 .clearfix{
   *zoom:1;
 }
 
-/* PC端需要有元素居中 宽度自定 */
+
 .center {
-  width: 1000px;/*可改像素数*/
+  width: 1000px;
   margin: auto;
 }
